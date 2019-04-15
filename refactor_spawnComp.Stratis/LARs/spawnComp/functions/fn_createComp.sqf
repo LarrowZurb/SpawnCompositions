@@ -29,17 +29,7 @@ params[
 _msg = format[ "COMP - Name: %1, Pos:%2, Offset: %3, Rot: %4, Align: %5", _compName, _compPos, _compOffset, _compRot, _compAlign ];
 DEBUG_MSG( DEBUG, _msg );
 
-//Get config from missionNamespace, campaignConfigFile, configFile
-//Default configNull if not found
-private _compCfg = [ [ "CfgCompositions", _compName ], configNull ] call BIS_fnc_loadClass;
-
-//If the composition config is not found
-if ( isNull _compCfg ) exitWith {
-	//Error
-	format[ "Composition %1 not found in any config", _compName ] call BIS_fnc_error;
-	//Return null
-	_compCfg
-};
+private _compCfg = missionConfigFile >> "CfgCompositions" >> _compName;
 
 //Get user OR compositions, position and direction
 ( [ _compCfg, _compPos, _compRot ] call LARs_fnc_getCompPosition ) params[ "_compPos", "_compRot", [ "_asPlaced", false ] ];
