@@ -1,0 +1,69 @@
+version=52;
+center[]={2949.1284,3.783246,6019.3467};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.8212891,3.897377,-2.2163086};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					isPlayer=1;
+				};
+				id=1;
+				type="B_Soldier_A_F";
+				atlOffset=0.047362328;
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.15722656,3.8953953,4.0244141};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+				};
+				id=14;
+				type="B_Soldier_A_F";
+				atlOffset=0.049724579;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.6630859,0.0014388561,-1.6611328};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+				};
+				id=27;
+				type="B_Soldier_A_F";
+				atlOffset=0.066743612;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=0;
+		atlOffset=0.047362328;
+	};
+};

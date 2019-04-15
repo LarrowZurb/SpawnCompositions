@@ -1,0 +1,47 @@
+version=52;
+center[]={1677.5977,4.6557131,5527.96};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,2.2247906,0};
+			angles[]={0,1.7453292e-005,4.797945};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this setdamage 0.9";
+		};
+		id=186;
+		type="B_Truck_01_transport_F";
+		atlOffset=-0.84428692;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="enableSimulation";
+				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

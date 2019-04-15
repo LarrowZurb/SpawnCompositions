@@ -1,0 +1,69 @@
+version=52;
+center[]={1588.4194,-1.4387081,5657.3721};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={11.064453,-2.2187502,8.5810547};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=248;
+		type="Land_Pier_wall_F";
+		atlOffset=1.6507576;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-6.4197998,4.0375586,-4.9174805};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=249;
+		type="B_Boat_Armed_01_minigun_F";
+		atlOffset=11.544028;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-6.4924316,4.1658897,7.9741211};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=250;
+		type="B_Boat_Armed_01_minigun_F";
+		atlOffset=11.335634;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.8480225,0.056664109,-11.638672};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=252;
+		type="Land_Canal_Wall_Stairs_F";
+		atlOffset=9.4068403;
+	};
+};

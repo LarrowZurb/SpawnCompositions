@@ -1,0 +1,59 @@
+version=52;
+center[]={4645.1572,4.9998894,3856.9792};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={10.910156,0.0015459061,-0.70703125};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=109;
+				type="B_Soldier_A_F";
+				atlOffset=-3.8146973e-006;
+			};
+			class Item1
+			{
+				dataType="Waypoint";
+				position[]={-21.125,0,-1.0610352};
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=110;
+				type="Move";
+				atlOffset=-0.00011062622;
+			};
+			class Item2
+			{
+				dataType="Waypoint";
+				position[]={10.214844,0.00011062622,1.8178711};
+				type="Cycle";
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=111;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=108;
+		atlOffset=-3.8146973e-006;
+	};
+};

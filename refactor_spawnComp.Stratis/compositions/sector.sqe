@@ -1,0 +1,440 @@
+version=52;
+center[]={4625.6968,5,3871.5017};
+class items
+{
+	items=5;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-0.44091797,0,0.984375};
+		};
+		init="systemchat ""sector initialised""";
+		id=8;
+		type="ModuleSector_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleSector_F_DefaultOwner";
+				expression="_this setVariable ['DefaultOwner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="-1";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleSector_F_CostInfantry";
+				expression="_this setVariable ['CostInfantry',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="1";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleSector_F_OnOwnerChange";
+				expression="_this setVariable ['OnOwnerChange',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="hint ""side changed""";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleSector_F_ScoreReward";
+				expression="_this setVariable ['ScoreReward',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleSector_F_CostWheeled";
+				expression="_this setVariable ['CostWheeled',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="2";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleSector_F_OwnerLimit";
+				expression="_this setVariable ['OwnerLimit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleSector_F_TaskTitle";
+				expression="_this setVariable ['TaskTitle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleSector_F_Designation";
+				expression="_this setVariable ['Designation',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleSector_F_TaskOwner";
+				expression="_this setVariable ['TaskOwner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleSector_F_CostAir";
+				expression="_this setVariable ['CostAir',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="2";
+					};
+				};
+			};
+			class Attribute10
+			{
+				property="ModuleSector_F_CostPlayers";
+				expression="_this setVariable ['CostPlayers',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="2";
+					};
+				};
+			};
+			class Attribute11
+			{
+				property="ModuleSector_F_CostTracked";
+				expression="_this setVariable ['CostTracked',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="4";
+					};
+				};
+			};
+			class Attribute12
+			{
+				property="ModuleSector_F_TaskDescription";
+				expression="_this setVariable ['TaskDescription',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute13
+			{
+				property="ModuleSector_F_CostWater";
+				expression="_this setVariable ['CostWater',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			class Attribute14
+			{
+				property="ModuleSector_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=15;
+		};
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={1.7749023,3.8146973e-006,0.97802734};
+		class Attributes
+		{
+			sizeA=10;
+			sizeB=10;
+		};
+		id=9;
+		type="EmptyDetector";
+		atlOffset=3.8146973e-006;
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1.3237305,0,6.151123};
+		};
+		id=10;
+		type="LocationArea_F";
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-0.19482422,0,-4.6262207};
+		};
+		id=11;
+		type="SideBLUFOR_F";
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-2.4648438,0,-3.487793};
+		};
+		id=12;
+		type="SideOPFOR_F";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=8;
+	};
+	class Links
+	{
+		items=8;
+		class Item0
+		{
+			linkID=0;
+			item0=7;
+			item1=3;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=6;
+			item1=3;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=3;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=5;
+			item1=4;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=12;
+			item1=8;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=11;
+			item1=8;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=8;
+			item1=10;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=10;
+			item1=9;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

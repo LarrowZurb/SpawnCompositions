@@ -1,0 +1,7 @@
+
+
+class CfgFunctions {
+	#include "LARs\spawnComp\functions\functions.cpp"
+};
+
+#include "compositions\compositions.cfg"

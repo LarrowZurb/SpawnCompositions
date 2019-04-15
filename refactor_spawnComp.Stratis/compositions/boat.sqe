@@ -1,0 +1,22 @@
+version=52;
+center[]={1829.2557,5.4999886,5614.9453};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,3.3772345,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=202;
+		type="B_Boat_Armed_01_minigun_F";
+		atlOffset=-1.1444092e-005;
+	};
+};

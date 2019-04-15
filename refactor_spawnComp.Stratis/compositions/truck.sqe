@@ -1,0 +1,22 @@
+version=52;
+center[]={1842.3669,5.4999771,5687.6733};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,2.2247906,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=110;
+		type="B_Truck_01_transport_F";
+		atlOffset=-2.2888184e-005;
+	};
+};

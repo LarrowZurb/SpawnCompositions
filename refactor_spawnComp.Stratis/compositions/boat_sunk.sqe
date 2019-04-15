@@ -1,0 +1,44 @@
+version=52;
+center[]={1829.256,5.5,5614.9448};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,3.3772345,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=202;
+		type="B_Boat_Armed_01_minigun_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="enableSimulation";
+				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
