@@ -35,18 +35,7 @@ private _repeatable = [ ( _attributes >> "repeatable" ), "BOOL", false ] call LA
 //Default to NONE if not defined it could possibly be waiting on a connection TriggerOwner
 private _activationBy = [ ( _attributes >> "activationBy" ), "TXT", "NONE" ] call LARs_fnc_getCfgValue;
 
-//TODO: If activationBy is guarded create guarded point, below is BI implementation from exportSQF
-//Is this correct? Does not setTriggerActivation cover this??? !!!!!
-//if (_type in ["east g","west g","guer g"]) then {
-//	format [
-//		"createGuardedPoint [%1,%2,-1,objNull];",
-//		["east","west","resistance"] # (["east g","west g","guer g"] find _type),
-//		_pos
-//	] call _fnc_addLine;
-//}
-
 private _trig_type = [ ( _attributes >> "type" ), "TXT", "PRESENT" ] call LARs_fnc_getCfgValue;
-
 private _isRectangle = [false, true] select getNumber( _attributes >> "isRectangle" );
 
 private _effectCondition = [ ( _attributes >> "effectCondition" ), "TXT", "true" ] call LARs_fnc_getCfgValue;
