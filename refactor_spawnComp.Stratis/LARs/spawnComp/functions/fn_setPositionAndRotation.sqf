@@ -162,3 +162,6 @@ _pos
 //	_obj setVectorDirAndUp [ _cfgDir, _cfgUp ];
 //
 //};
+
+
+//TODO: create tesor rotation and apply
