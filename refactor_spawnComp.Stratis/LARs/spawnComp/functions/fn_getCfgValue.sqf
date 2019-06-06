@@ -1,3 +1,9 @@
+
+//TODO: Make all objects get their values from this function
+//If composition has already been read and saved in data array LARs_compositionData ( preInit in CfgCompositions )
+//then retrieve data from array
+//Else read data from cfg and also save as data array so any further composition spawns will be read from data
+
 //Get an Objects attribute value
 
 private[ "_value" ];
@@ -17,7 +23,7 @@ switch ( toUpper _type ) do {
 	};
 	case "BOOL" : {
 		_value = if ( isNumber( _cfg ) ) then {
-			[ false, true ] select ( getNumber( _cfg ) ) 
+			[ false, true ] select ( getNumber( _cfg ) )
 		}else{
 			if !( isNil "_default" ) then {
 				_default
@@ -28,7 +34,7 @@ switch ( toUpper _type ) do {
 	};
 	case "TXT" : {
 		_value = if ( isText( _cfg ) ) then {
-			getText ( _cfg ) 
+			getText ( _cfg )
 		}else{
 			if !( isNil "_default" ) then {
 				_default
@@ -39,7 +45,7 @@ switch ( toUpper _type ) do {
 	};
 	case "ARRAY" : {
 		_value = if ( isArray( _cfg ) ) then {
-			getArray ( _cfg ) 
+			getArray ( _cfg )
 		}else{
 			if !( isNil "_default" ) then {
 				_default
