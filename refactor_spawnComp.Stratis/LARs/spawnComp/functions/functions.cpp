@@ -9,10 +9,13 @@ class LARs_spawnComp {
 		class getCfgValue{};
 		class getCompPosition{};
 		class getUnitInventory{};
-		class setPositionAndRotation{};
+		class rotateVectorDirAndUp{}; //						New rotation matrix
+		class setPositionAndRotation{}; //Old needs replacing ^^
 		class sortCfgItems{};
 		class spawnComp{};
 		class spawnCompItems{};
+
+		//Entity spawners
 		class spawnGroup{};
 		class spawnLogic{};
 		class spawnMarker{};

@@ -1,6 +1,6 @@
 ﻿//Entry function - calls function to spawn composition and handles composition references
 
-//If Server
+//If !Server
 if ( !isServer ) then {
 	//RE function on server
 	_this remoteExec[ "LARs_fnc_spawnComp", 2 ];

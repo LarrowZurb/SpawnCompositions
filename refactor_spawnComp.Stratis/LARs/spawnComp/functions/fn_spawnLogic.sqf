@@ -24,20 +24,38 @@ if ( random 1 <= _presence && { call compile _preCondition } ) then {
 	_logic = _group createUnit [ _type, [0,0,0], [], 0, "CAN_COLLIDE" ]; //No randomStart for logics
 
 	//Handle initialisation of modules spawned at runtime( time > 0 ) ( A3 1.86 )
-	if ( _type isKindOf "Module_F" ) then {
-		_logic setVariable [ "BIS_fnc_initModules_disableAutoActivation", false ];
+	//FIXED: Initialise timeline animations
+	//Removed keyframe animation modules as they do not use the module framework to initialise
+	//EDIT: excluded any type Module_F that has no function
+	private _init = if ( _type isKindOf "Module_F" && { getText( configFile >> "CfgVehicles" >> _type >> "function" ) != "" } ) then {
+		_logic setVariable[ 'BIS_fnc_initModules_disableAutoActivation', true ];
+		"this setVariable[ 'BIS_fnc_initModules_disableAutoActivation', false ]; this setVariable[ 'BIS_fnc_initModules_activate', true ];"
+	}else{
+		_logic setVariable[ 'BIS_fnc_initModules_disableAutoActivation', false ];
+		""
 	};
 
 	_position = [ _logic, _position, _rotation, _ATLOffset ] call LARs_fnc_setPositionandRotation;
 
 	if !( _varName isEqualTo "" ) then {
 		_logic setVehicleVarName _varName;
-		missionNamespace setVariable [ _varName, _logic, true ];
+		_logic call BIS_fnc_objectVar;
+		//missionNamespace setVariable [ _varName, _logic, true ];
 	};
 
-	private _init = getText( _cfg >> "init" );
+	_init = _init + getText( _cfg >> "init" );
+
+	//FIXED: Initialise timeline animations
+	if ( _type isKindOf "Timeline_F" ) then {
+		_init = "this call BIS_fnc_keyframeAnimation_init;" + _init;
+	};
+
 	private _nul = _inits pushBack [ _logic, format[ "this = _this; %1", _init ] ];
 
 };
+
+//TODO: If we have any Timeline_F then they need initialising via BIS_fnc_keyframeAnimation_init
+//( once all timeline, curves and keys and their simulated objects have been spawned )
+//as they do not use the module framework to initialise( no need for BIS_fnc_initModules_disableAutoActivation )
 
 _logic
